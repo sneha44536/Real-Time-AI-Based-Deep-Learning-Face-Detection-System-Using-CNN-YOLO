@@ -1,16 +1,4 @@
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
-
-![Deep Learning](https://img.shields.io/badge/DeepLearning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-5C2D91?style=for-the-badge)
-
-![DNN](https://img.shields.io/badge/DNN-Face%20Detection-green?style=for-the-badge)
-
-![AI](https://img.shields.io/badge/Artificial%20Intelligence-blue?style=for-the-badge)
-
-![Webcam](https://img.shields.io/badge/Webcam-RealTime-red?style=for-the-badge)
+v![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Deep Learning](https://img.shields.io/badge/DeepLearning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-5C2D91?style=for-the-badge) ![DNN](https://img.shields.io/badge/DNN-Face%20Detection-green?style=for-the-badge) ![AI](https://img.shields.io/badge/Artificial%20Intelligence-blue?style=for-the-badge) ![Webcam](https://img.shields.io/badge/Webcam-RealTime-red?style=for-the-badge)
 
 The Real-Time AI-Based Deep Learning Face Detection System Using OpenCV is a smart and interactive computer vision project that detects human faces instantly through a live webcam feed.
 Developed using Python, OpenCV, and Deep Learning technology, the system accurately identifies multiple faces in real time and highlights them with dynamic bounding boxes and labels such as Person 1, Person 2, and more.
