@@ -1,14 +1,106 @@
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white) ![Deep Learning](https://img.shields.io/badge/DeepLearning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white) ![Computer Vision](https://img.shields.io/badge/Computer%20Vision-5C2D91?style=for-the-badge) ![DNN](https://img.shields.io/badge/DNN-Face%20Detection-green?style=for-the-badge) ![AI](https://img.shields.io/badge/Artificial%20Intelligence-blue?style=for-the-badge) ![Webcam](https://img.shields.io/badge/Webcam-red?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-111111?style=for-the-badge)
+![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
+![Deep Learning](https://img.shields.io/badge/DeepLearning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-5C2D91?style=for-the-badge)
+![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-blue?style=for-the-badge)
+![Object Detection](https://img.shields.io/badge/Object%20Detection-green?style=for-the-badge)
+![Webcam](https://img.shields.io/badge/Webcam-red?style=for-the-badge)
 
-The Real-Time AI-Based Deep Learning Face Detection System Using OpenCV is a smart and interactive computer vision project that detects human faces instantly through a live webcam feed.
-Developed using Python, OpenCV, and Deep Learning technology, the system accurately identifies multiple faces in real time and highlights them with dynamic bounding boxes and labels such as Person 1, Person 2, and more.
+# Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV
 
-Unlike traditional face detection methods, this project uses a Deep Neural Network (DNN) model, making the detection faster, smarter, and more reliable even in challenging conditions such as group photos, different face angles, mobile screen images, and varying lighting environments. 
-The system continuously processes live video frames, analyzes facial features, and generates real-time detection output with improved accuracy and performance.
+## Project Overview
+The Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV is an advanced computer vision project that detects and counts multiple people instantly through a live webcam feed. Developed using Python, YOLOv8, OpenCV, and Deep Learning technology, the system performs real-time human detection with high speed, improved accuracy, and intelligent object recognition capabilities.
 
-The project captures live frames from the webcam, detects faces within each frame, and displays the processed output screen with rectangular face boundaries and person labels for easy identification and tracking. 
-It is capable of detecting multiple faces simultaneously and providing instant visual output in real time.
+The project continuously captures live video frames from the webcam and uses the YOLOv8 Deep Learning model to identify human objects in real time. Detected persons are highlighted using dynamic bounding boxes and labels such as Person 1, Person 2, and more, along with the total people count displayed on the screen.
 
-This project demonstrates the practical application of Artificial Intelligence, Deep Learning, and Computer Vision in developing intelligent real-world solutions.
-It can be applied in smart surveillance systems, automated attendance systems, security monitoring, access control, crowd analysis, and human-computer interaction applications. 
-The project highlights how AI-powered technologies can improve efficiency, accuracy, and responsiveness in modern real-time systems.
+Unlike traditional detection techniques, YOLOv8 uses advanced Deep Learning and object detection algorithms that provide faster detection, better long-distance recognition, improved small-object detection, and higher real-time performance. The system can accurately detect people even in crowded environments, different lighting conditions, and complex backgrounds.
+
+This project demonstrates the practical implementation of Artificial Intelligence, Deep Learning, and Computer Vision in developing intelligent real-world applications. It can be used in smart surveillance systems, crowd monitoring, security systems, smart attendance systems, traffic monitoring, and AI-powered automation applications.
+
+---
+
+# Why YOLOv8 is Used
+
+YOLOv8 (You Only Look Once Version 8) is used because it provides:
+
+- Faster real-time detection
+- Better accuracy
+- Long-distance object detection
+- Small object/person detection
+- Real-time AI performance
+- Multi-person detection capability
+- Reduced false detections
+- Advanced Deep Learning-based object recognition
+
+Compared to traditional OpenCV DNN models, YOLOv8 performs significantly better in speed, detection quality, and real-time processing.
+
+---
+
+# Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| OpenCV | Webcam handling and image processing |
+| YOLOv8 | Real-time object/person detection |
+| Deep Learning | Intelligent AI-based detection |
+| Computer Vision | Image and video analysis |
+| Ultralytics YOLO | YOLOv8 framework and model support |
+| Webcam | Live video input source |
+
+---
+
+# Techniques Used
+
+| Technique | Purpose |
+|---|---|
+| Object Detection | Detect humans in video frames |
+| Deep Neural Networks (DNN) | AI-based intelligent detection |
+| Real-Time Video Processing | Continuous webcam frame analysis |
+| Bounding Box Detection | Highlight detected persons |
+| Confidence Scoring | Filter weak detections |
+| Image Processing | Improve frame analysis |
+| Multi-Person Detection | Detect multiple humans simultaneously |
+| AI-Based Recognition | Intelligent object identification |
+
+---
+
+# Features
+
+- Real-time human detection
+- AI-based people counting
+- Fullscreen live webcam feed
+- Multiple person detection
+- Bounding boxes with labels
+- Long-distance detection
+- Small object detection
+- Real-time AI processing
+- High-speed detection performance
+- Dynamic people count display
+
+---
+
+# Applications
+
+- Smart Surveillance Systems
+- Crowd Monitoring Systems
+- Smart Security Systems
+- AI-Based Attendance Systems
+- Traffic Monitoring
+- Human Detection Systems
+- Smart City Applications
+- Real-Time Monitoring Systems
+
+---
+
+# Future Enhancements
+
+- Face recognition with names
+- Attendance management system
+- GPU acceleration
+- Mobile camera integration
+- Person tracking IDs
+- Motion tracking
+- Video recording system
+- AI analytics dashboard
