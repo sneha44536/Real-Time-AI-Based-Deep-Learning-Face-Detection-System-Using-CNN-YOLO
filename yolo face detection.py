@@ -1,99 +1,87 @@
 
 
-from ultralytics import YOLO
 import cv2
 
 
-model = YOLO("yolov8n.pt")
+model = cv2.dnn.readNetFromCaffe(
+    r"C:\Users\sneha\spyder\deploy.prototxt",
+    r"C:\Users\sneha\spyder\res10_300x300_ssd_iter_140000.caffemodel"
+)
 
 
 webcam = cv2.VideoCapture(0)
 
-
-webcam.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
-webcam.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-
-
 if not webcam.isOpened():
-    print("Error opening webcam")
+    print("Error: Could not open webcam.")
     exit()
 
-print("YOLO AI Detection Started")
-print("Press 'd' to exit")
-
-
-cv2.namedWindow(
-    "YOLO Real-Time Detection",
-    cv2.WND_PROP_FULLSCREEN
-)
-
-cv2.setWindowProperty(
-    "YOLO Real-Time Detection",
-    cv2.WND_PROP_FULLSCREEN,
-    cv2.WINDOW_FULLSCREEN
-)
+print("Advanced Face Detection Started!")
+print("Press 'd' to exit.")
 
 while True:
 
-   
+
     ret, frame = webcam.read()
 
     if not ret:
+        print("Failed to grab frame.")
         break
 
-   
-    results = model(frame)
 
-    person_count = 0
+    (h, w) = frame.shape[:2]
 
+    
+    blob = cv2.dnn.blobFromImage(
+        cv2.resize(frame, (300, 300)),
+        1.0,
+        (300, 300),
+        (104.0, 177.0, 123.0)
+    )
 
-    for result in results:
+    
+    model.setInput(blob)
+    detections = model.forward()
 
-        boxes = result.boxes
+    person_no = 1
+    people_count = 0
 
-        for box in boxes:
+    for i in range(detections.shape[2]):
 
-            
-            confidence = float(box.conf[0])
+        confidence = detections[0, 0, i, 2]
 
-            
-            class_id = int(box.cls[0])
+        if confidence > 0.6:
 
-           
-            if class_id == 0 and confidence > 0.5:
+            people_count += 1
 
-                person_count += 1
+            box = detections[0, 0, i, 3:7] * [w, h, w, h]
+            (x1, y1, x2, y2) = box.astype("int")
 
-                #
-                x1, y1, x2, y2 = map(
-                    int,
-                    box.xyxy[0]
-                )
+          
+            cv2.rectangle(
+                frame,
+                (x1, y1),
+                (x2, y2),
+                (0, 255, 0),
+                3
+            )
 
-              
-                cv2.rectangle(
-                    frame,
-                    (x1, y1),
-                    (x2, y2),
-                    (0, 255, 0),
-                    2
-                )
+         
+            cv2.putText(
+                frame,
+                f'Person {person_no}',
+                (x1, y1 - 10),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.8,
+                (0, 255, 0),
+                2
+            )
 
-           
-                cv2.putText(
-                    frame,
-                    f'Person {person_count}',
-                    (x1, y1 - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX,
-                    0.8,
-                    (0, 255, 0),
-                    2
-                )
+            person_no += 1
 
   
     cv2.putText(
         frame,
-        f'Total People in the frame: {person_count}',
+        f'Total People: {people_count}',
         (20, 50),
         cv2.FONT_HERSHEY_SIMPLEX,
         1,
@@ -101,16 +89,16 @@ while True:
         3
     )
 
-   
-    cv2.imshow(
-        "YOLO Real-Time Detection",
-        frame
-    )
+ 
+    cv2.imshow("Advanced Real-Time Face Detection", frame)
 
-  
+ 
     if cv2.waitKey(1) & 0xFF == ord('d'):
         break
 
 
 webcam.release()
+cv2.destroyAllWindows()
+
+print("Webcam closed.")
 cv2.destroyAllWindows()
