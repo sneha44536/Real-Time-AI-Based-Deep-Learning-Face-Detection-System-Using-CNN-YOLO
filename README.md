@@ -1,3 +1,5 @@
+# Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV
+
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111111?style=for-the-badge)
 ![OpenCV](https://img.shields.io/badge/OpenCV-%23white.svg?style=for-the-badge&logo=opencv&logoColor=white)
@@ -7,9 +9,10 @@
 ![Object Detection](https://img.shields.io/badge/Object%20Detection-green?style=for-the-badge)
 ![Webcam](https://img.shields.io/badge/Webcam-red?style=for-the-badge)
 
-# Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV
+---
 
-## Project Overview
+# Project Overview
+
 The Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV is an advanced computer vision project that detects and counts multiple people instantly through a live webcam feed. Developed using Python, YOLOv8, OpenCV, and Deep Learning technology, the system performs real-time human detection with high speed, improved accuracy, and intelligent object recognition capabilities.
 
 The project continuously captures live video frames from the webcam and uses the YOLOv8 Deep Learning model to identify human objects in real time. Detected persons are highlighted using dynamic bounding boxes and labels such as Person 1, Person 2, and more, along with the total people count displayed on the screen.
@@ -20,20 +23,49 @@ This project demonstrates the practical implementation of Artificial Intelligenc
 
 ---
 
-# Why YOLOv8 is Used
+# Why YOLOv8 Was Used Instead of Traditional OpenCV DNN
 
-YOLOv8 (You Only Look Once Version 8) is used because it provides:
+Initially, the project was developed using traditional OpenCV Deep Neural Network (DNN) detection techniques. While the system was able to perform basic real-time detection, several limitations were observed during testing in real-world conditions.
+
+## Problems Identified in the Initial OpenCV DNN Model
+
+- Inaccurate long-distance detection
+- Difficulty detecting small faces/persons
+- Missed detections in group scenes
+- Reduced accuracy in low lighting conditions
+- Slower performance in crowded environments
+- Less reliable real-time detection
+
+To overcome these challenges, the system was upgraded using the YOLOv8 Deep Learning model.
+
+## Improvements Achieved Using YOLOv8
 
 - Faster real-time detection
-- Better accuracy
-- Long-distance object detection
-- Small object/person detection
-- Real-time AI performance
-- Multi-person detection capability
+- Improved long-distance person detection
+- Better small-object and small-person detection
+- Higher detection accuracy
+- Improved crowd and multi-person detection
 - Reduced false detections
-- Advanced Deep Learning-based object recognition
+- Better real-time AI performance
 
-Compared to traditional OpenCV DNN models, YOLOv8 performs significantly better in speed, detection quality, and real-time processing.
+The YOLOv8 model significantly enhanced the overall efficiency, speed, and reliability of the system, making it more suitable for intelligent real-world AI surveillance and monitoring applications.
+
+---
+
+# Why YOLOv8 is Better Than Traditional OpenCV DNN
+
+| Feature | OpenCV DNN | YOLOv8 |
+|---|---|---|
+| Detection Speed | Medium | Very Fast |
+| Real-Time Performance | Good | Excellent |
+| Long-Distance Detection | Weak | Strong |
+| Small Object Detection | Limited | Highly Accurate |
+| Crowd Detection | Less Accurate | More Accurate |
+| Detection Accuracy | Moderate | High |
+| Multiple Object Detection | Limited | Advanced |
+| False Detections | More | Less |
+| AI Capability | Basic DNN | Advanced Deep Learning |
+| Scalability | Limited | High |
 
 ---
 
@@ -104,3 +136,13 @@ Compared to traditional OpenCV DNN models, YOLOv8 performs significantly better 
 - Motion tracking
 - Video recording system
 - AI analytics dashboard
+
+---
+
+# Installation
+
+## Install Required Libraries
+
+```bash
+pip install ultralytics
+pip install opencv-python
