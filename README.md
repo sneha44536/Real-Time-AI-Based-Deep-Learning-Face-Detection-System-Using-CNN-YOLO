@@ -8,7 +8,6 @@
 ![Artificial Intelligence](https://img.shields.io/badge/Artificial%20Intelligence-blue?style=for-the-badge)
 ![Object Detection](https://img.shields.io/badge/Object%20Detection-green?style=for-the-badge)
 ![Webcam](https://img.shields.io/badge/Webcam-red?style=for-the-badge)
-
 --
 # Project Overview
 
