@@ -20,6 +20,7 @@ This project demonstrates the practical implementation of Artificial Intelligenc
 
 ---
 
+
 # Why YOLOv8 Was Used Instead of Traditional OpenCV DNN
 
 Initially, the project was developed using traditional OpenCV Deep Neural Network (DNN) detection techniques. While the system was able to perform basic real-time detection, several limitations were observed during testing in real-world conditions.
