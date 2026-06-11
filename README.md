@@ -19,9 +19,7 @@ Unlike traditional detection techniques, YOLOv8 uses advanced Deep Learning and 
 
 This project demonstrates the practical implementation of Artificial Intelligence, Deep Learning, and Computer Vision in developing intelligent real-world applications. It can be used in smart surveillance systems, crowd monitoring, security systems, smart attendance systems, traffic monitoring, and AI-powered automation applications.
 
----
-
-
+--
 
 # Why YOLOv8 Was Used Instead of Traditional OpenCV DNN
 
