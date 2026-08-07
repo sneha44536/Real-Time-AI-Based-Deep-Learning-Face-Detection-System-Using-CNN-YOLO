@@ -136,8 +136,6 @@ The YOLOv8 model significantly enhanced the overall efficiency, speed, and relia
 - Motion tracking
 - Video recording system
 - AI analytics dashboard
-
-
 ---
 
 # Installation
