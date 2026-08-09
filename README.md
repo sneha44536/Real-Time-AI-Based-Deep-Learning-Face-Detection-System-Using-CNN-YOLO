@@ -48,6 +48,8 @@ To overcome these challenges, the system was upgraded using the YOLOv8 Deep Lear
 - Reduced false detections
 - Better real-time AI performance
 
+
+
 The YOLOv8 model significantly enhanced the overall efficiency, speed, and reliability of the system, making it more suitable for intelligent real-world AI surveillance and monitoring applications.
 
 ---
