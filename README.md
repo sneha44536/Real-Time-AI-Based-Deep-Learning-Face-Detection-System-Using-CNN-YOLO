@@ -1,4 +1,4 @@
-# Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV
+# Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV 
 
 ![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-111111?style=for-the-badge)
