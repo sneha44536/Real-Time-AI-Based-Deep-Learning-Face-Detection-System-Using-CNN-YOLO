@@ -16,7 +16,6 @@ The project continuously captures live video frames from the webcam and uses the
 Unlike traditional detection techniques, YOLOv8 uses advanced Deep Learning and object detection algorithms that provide faster detection, better long-distance recognition, improved small-object detection, and higher real-time performance. The system can accurately detect people even in crowded environments, different lighting conditions, and complex backgrounds.
 
 This project demonstrates the practical implementation of Artificial Intelligence, Deep Learning, and Computer Vision in developing intelligent real-world applications. It can be used in smart surveillance systems, crowd monitoring, security systems, smart attendance systems, traffic monitoring, and AI-powered automation applications.
-
 -
 # Why YOLOv8 Was Used Instead of Traditional OpenCV DNN
 
