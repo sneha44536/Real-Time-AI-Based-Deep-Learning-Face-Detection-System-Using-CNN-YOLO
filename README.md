@@ -102,6 +102,12 @@ The YOLOv8 model significantly enhanced the overall efficiency, speed, and relia
 
 # Features
 
+
+
+
+
+
+
 - Real-time human detection
 - AI-based people counting
 - Fullscreen live webcam feed
