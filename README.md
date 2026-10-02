@@ -15,8 +15,6 @@
 The Real-Time AI-Based Multi-Person Detection and Counting System Using YOLOv8 and OpenCV is an advanced computer vision project that detects and counts multiple people instantly through a live webcam feed. Developed using Python, YOLOv8, OpenCV, and Deep Learning technology, the system performs real-time human detection with high speed, improved accuracy, and intelligent object recognition capabilities.
 
 The project continuously captures live video frames from the webcam and uses the YOLOv8 Deep Learning model to identify human objects in real time. Detected persons are highlighted using dynamic bounding boxes and labels such as Person 1, Person 2, and more, along with the total people count displayed on the screen.
-
-
 Unlike traditional detection techniques, YOLOv8 uses advanced Deep Learning and object detection algorithms that provide faster detection, better long-distance recognition, improved small-object detection, and higher real-time performance. The system can accurately detect people even in crowded environments, different lighting conditions, and complex backgrounds.
 
 This project demonstrates the practical implementation of Artificial Intelligence, Deep Learning, and Computer Vision in developing intelligent real-world applications. It can be used in smart surveillance systems, crowd monitoring, security systems, smart attendance systems, traffic monitoring, and AI-powered automation applications.
