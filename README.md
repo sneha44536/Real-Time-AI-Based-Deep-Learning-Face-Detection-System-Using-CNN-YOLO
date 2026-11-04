@@ -76,9 +76,6 @@ The YOLOv8 model significantly enhanced the overall efficiency, speed, and relia
 | Computer Vision | Image and video analysis |
 | Ultralytics YOLO | YOLOv8 framework and model support |
 | Webcam | Live video input source |
-
-
-
 ---
 
 # Techniques Used
