@@ -45,9 +45,7 @@ To overcome these challenges, the system was upgraded using the YOLOv8 Deep Lear
 
 
 The YOLOv8 model significantly enhanced the overall efficiency, speed, and reliability of the system, making it more suitable for intelligent real-world AI surveillance and monitoring applications.
-
 ---
-
 # Why YOLOv8 is Better Than Traditional OpenCV DNN
 
 | Feature | OpenCV DNN | YOLOv8 |
