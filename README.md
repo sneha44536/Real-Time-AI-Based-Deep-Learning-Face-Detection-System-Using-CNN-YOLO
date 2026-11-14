@@ -117,7 +117,6 @@ The YOLOv8 model significantly enhanced the overall efficiency, speed, and relia
 - Real-Time Monitoring Systems
 
 ---
-
 # Future Enhancements
 
 - Face recognition with names
